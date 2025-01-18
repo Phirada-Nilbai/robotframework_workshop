@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.11.2 on win32)" generated="2025-01-12T15:47:48.431056" rpa="false" schemaversion="5">
+<suite id="s1" name="All Online Search Success" source="C:\robotframework_workshop\allonline\all_online_search_success.robot">
+<test id="s1-t1" name="ทดสอบใส่คำค้น ไฟน์ไลน์ ควรเจอ 88 สินค้า" line="6">
+<kw name="เปิดเว็บเบราว์เซอร์ และเข้า All online">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-12T15:47:48.735587" level="INFO">Opening browser 'chrome' to base url 'https://www.allonline.7eleven.co.th/'.</msg>
+<arg>url=https://www.allonline.7eleven.co.th/</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-12T15:47:48.735587" elapsed="7.815033"/>
+</kw>
+<status status="PASS" start="2025-01-12T15:47:48.734587" elapsed="7.816033"/>
+</kw>
+<kw name="ใส่คำค้นหา">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-12T15:47:56.551619" level="INFO">Typing text 'ไฟน์ไลน์' into text field 'name=q'.</msg>
+<arg>name=q</arg>
+<arg>ไฟน์ไลน์</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-12T15:47:56.551619" elapsed="0.111331"/>
+</kw>
+<status status="PASS" start="2025-01-12T15:47:56.550620" elapsed="0.112330"/>
+</kw>
+<kw name="กดปุ่ม Enter">
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-01-12T15:47:56.663948" level="INFO">Sending key(s) ('RETURN',) to page.</msg>
+<msg time="2025-01-12T15:47:56.663948" level="INFO">Pressing special key RETURN to browser.</msg>
+<msg time="2025-01-12T15:47:56.663948" level="INFO">Releasing special key RETURN.</msg>
+<arg>None</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-01-12T15:47:56.663948" elapsed="5.382262"/>
+</kw>
+<status status="PASS" start="2025-01-12T15:47:56.662950" elapsed="5.383260"/>
+</kw>
+<kw name="ตรวจสอบผลการค้นหา">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>ผลการค้นหาสำหรับ »ไฟน์ไลน์«</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-01-12T15:48:02.047208" elapsed="0.015066"/>
+</kw>
+<status status="PASS" start="2025-01-12T15:48:02.046210" elapsed="0.016064"/>
+</kw>
+<status status="PASS" start="2025-01-12T15:47:48.731586" elapsed="13.330688"/>
+</test>
+<status status="PASS" start="2025-01-12T15:47:48.433057" elapsed="13.630217"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="All Online Search Success">All Online Search Success</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

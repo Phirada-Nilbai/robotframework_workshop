@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.11.2 on win32)" generated="2025-01-12T15:16:46.842695" rpa="false" schemaversion="5">
+<suite id="s1" name="Google8" source="C:\robotframework_workshop\google\google8.robot">
+<kw name="เปิดเว็บเบราว์เซอร์" owner="keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-12T15:16:47.157188" level="INFO">Opening browser 'headlesschrome' to base url 'None'.</msg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-12T15:16:47.157188" elapsed="1.477339"/>
+</kw>
+<status status="PASS" start="2025-01-12T15:16:47.156188" elapsed="1.478339"/>
+</kw>
+<test id="s1-t1" name="ทดสอบใส่คำค้น PIM ควรเจอ สถาบันการจัดการปัญญาภิวัฒน์" line="11">
+<kw name="เข้า Google" owner="keywords" type="SETUP">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-01-12T15:16:48.637528" level="INFO">Opening url 'http://www.google.com'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-01-12T15:16:48.637528" elapsed="2.170421"/>
+</kw>
+<status status="PASS" start="2025-01-12T15:16:48.636526" elapsed="2.171423"/>
+</kw>
+<kw name="ค้นหาและตรวจสอบ" owner="keywords">
+<kw name="ใส่คำค้นหา" owner="keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-12T15:16:50.810949" level="INFO">Typing text 'PIM' into text field 'name=q'.</msg>
+<arg>name=q</arg>
+<arg>${คำค้น}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-12T15:16:50.809951" elapsed="0.089719"/>
+</kw>
+<arg>${คำค้น}</arg>
+<status status="PASS" start="2025-01-12T15:16:50.809951" elapsed="0.089719"/>
+</kw>
+<kw name="กดปุ่ม Enter" owner="keywords">
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-01-12T15:16:50.900671" level="INFO">Sending key(s) ('RETURN',) to page.</msg>
+<msg time="2025-01-12T15:16:50.900671" level="INFO">Pressing special key RETURN to browser.</msg>
+<msg time="2025-01-12T15:16:50.900671" level="INFO">Releasing special key RETURN.</msg>
+<arg>None</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-01-12T15:16:50.900671" elapsed="1.505647"/>
+</kw>
+<status status="PASS" start="2025-01-12T15:16:50.899670" elapsed="1.506648"/>
+</kw>
+<kw name="ตรวจสอบผลการค้นหา" owner="keywords">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${คำที่พบ}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-01-12T15:16:52.406318" elapsed="0.026154"/>
+</kw>
+<arg>${คำที่พบ}</arg>
+<status status="PASS" start="2025-01-12T15:16:52.406318" elapsed="0.026154"/>
+</kw>
+<arg>PIM</arg>
+<arg>สถาบันการจัดการปัญญาภิวัฒน์</arg>
+<status status="PASS" start="2025-01-12T15:16:50.808950" elapsed="1.623522"/>
+</kw>
+<status status="PASS" start="2025-01-12T15:16:48.634527" elapsed="3.798945"/>
+</test>
+<test id="s1-t2" name="ทดสอบใส่คำค้น Agatha all along ควรเจอ Kathryn" line="12">
+<kw name="เข้า Google" owner="keywords" type="SETUP">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-01-12T15:16:52.435471" level="INFO">Opening url 'http://www.google.com'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-01-12T15:16:52.434471" elapsed="1.412626"/>
+</kw>
+<status status="PASS" start="2025-01-12T15:16:52.434471" elapsed="1.412626"/>
+</kw>
+<kw name="ค้นหาและตรวจสอบ" owner="keywords">
+<kw name="ใส่คำค้นหา" owner="keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-12T15:16:53.848189" level="INFO">Typing text 'Agatha all along' into text field 'name=q'.</msg>
+<arg>name=q</arg>
+<arg>${คำค้น}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-12T15:16:53.848189" elapsed="0.106179"/>
+</kw>
+<arg>${คำค้น}</arg>
+<status status="PASS" start="2025-01-12T15:16:53.848189" elapsed="0.107180"/>
+</kw>
+<kw name="กดปุ่ม Enter" owner="keywords">
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-01-12T15:16:53.956369" level="INFO">Sending key(s) ('RETURN',) to page.</msg>
+<msg time="2025-01-12T15:16:53.956369" level="INFO">Pressing special key RETURN to browser.</msg>
+<msg time="2025-01-12T15:16:53.956369" level="INFO">Releasing special key RETURN.</msg>
+<arg>None</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-01-12T15:16:53.955369" elapsed="1.278273"/>
+</kw>
+<status status="PASS" start="2025-01-12T15:16:53.955369" elapsed="1.278273"/>
+</kw>
+<kw name="ตรวจสอบผลการค้นหา" owner="keywords">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${คำที่พบ}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-01-12T15:16:55.234644" elapsed="0.030116"/>
+</kw>
+<arg>${คำที่พบ}</arg>
+<status status="PASS" start="2025-01-12T15:16:55.234644" elapsed="0.030116"/>
+</kw>
+<arg>Agatha all along</arg>
+<arg>Kathryn</arg>
+<status status="PASS" start="2025-01-12T15:16:53.847097" elapsed="1.417663"/>
+</kw>
+<status status="PASS" start="2025-01-12T15:16:52.433472" elapsed="2.832288"/>
+</test>
+<test id="s1-t3" name="ทดสอบใส่คำค้น Kathryn hahn ควรเจอ hahn" line="13">
+<kw name="เข้า Google" owner="keywords" type="SETUP">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-01-12T15:16:55.268762" level="INFO">Opening url 'http://www.google.com'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-01-12T15:16:55.267759" elapsed="1.235204"/>
+</kw>
+<status status="PASS" start="2025-01-12T15:16:55.267759" elapsed="1.235204"/>
+</kw>
+<kw name="ค้นหาและตรวจสอบ" owner="keywords">
+<kw name="ใส่คำค้นหา" owner="keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-12T15:16:56.504962" level="INFO">Typing text 'Kathryn hahn' into text field 'name=q'.</msg>
+<arg>name=q</arg>
+<arg>${คำค้น}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-12T15:16:56.503963" elapsed="0.109851"/>
+</kw>
+<arg>${คำค้น}</arg>
+<status status="PASS" start="2025-01-12T15:16:56.503963" elapsed="0.109851"/>
+</kw>
+<kw name="กดปุ่ม Enter" owner="keywords">
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-01-12T15:16:56.614814" level="INFO">Sending key(s) ('RETURN',) to page.</msg>
+<msg time="2025-01-12T15:16:56.614814" level="INFO">Pressing special key RETURN to browser.</msg>
+<msg time="2025-01-12T15:16:56.614814" level="INFO">Releasing special key RETURN.</msg>
+<arg>None</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-01-12T15:16:56.613814" elapsed="1.163712"/>
+</kw>
+<status status="PASS" start="2025-01-12T15:16:56.613814" elapsed="1.163712"/>
+</kw>
+<kw name="ตรวจสอบผลการค้นหา" owner="keywords">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${คำที่พบ}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-01-12T15:16:57.778530" elapsed="0.030082"/>
+</kw>
+<arg>${คำที่พบ}</arg>
+<status status="PASS" start="2025-01-12T15:16:57.778530" elapsed="0.030082"/>
+</kw>
+<arg>Kathryn hahn</arg>
+<arg>hahn</arg>
+<status status="PASS" start="2025-01-12T15:16:56.503963" elapsed="1.305158"/>
+</kw>
+<status status="PASS" start="2025-01-12T15:16:55.266760" elapsed="2.542361"/>
+</test>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-01-12T15:16:57.810120" elapsed="2.154903"/>
+</kw>
+<status status="PASS" start="2025-01-12T15:16:46.844694" elapsed="13.121343"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Google8">Google8</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
